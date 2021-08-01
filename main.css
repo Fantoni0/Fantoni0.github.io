@@ -137,12 +137,12 @@ hr {
 footer {
     background-color: #1A1C1A;
     color: white;
-    clear: both;
     text-align: center;
-    font-family: fantasy;
+    font-family: Monaco, monospace;
     font-size: smaller;
     padding: 15px;
-    position: relative;
     width: 100%;
     bottom: 0;
+    clear: both;
+    position: relative;
 }
