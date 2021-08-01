@@ -1,0 +1,148 @@
+body {
+    font-family: serif;
+    color: #1A1C1A;
+    background-color: #DBB991;
+    margin: 0;
+}
+
+
+header {
+    background-color: #1A1C1A;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    position: relative;
+}
+
+a {
+    color: #9E5B28;
+    text-decoration: none;
+}
+a:visited {
+    color:  #615240;
+    text-decoration: none;
+}
+
+#photo {
+    float: left;
+    margin: 2% 5% 2% 8%;
+    border-radius: 50%;
+    border: 6px inset #1A1C1A;
+    height: 150px;
+    width: 150px;.
+}
+
+#photo:hover {
+    transform: scale(1.2);
+    filter: grayscale(100%);
+}
+
+nav {
+    line-height: 30px;
+    font-family: Monaco, monospace;
+    background-color: #eeeeee;
+    padding: 5px;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px 5px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+nav, a {
+    color: #9E5B28;
+    text-decoration: none;
+}
+nav, a:visited {
+    color:  #9E5B28;
+    text-decoration: none;
+}
+
+section {
+    padding: 10px;
+}
+
+section h1 {
+    text-align: center;
+}
+
+section h3 {
+    text-align: center;
+    font-family: Monaco, monospace;
+}
+
+section h4 {
+    max-width: 700px;
+    margin: 2em auto;
+    line-height: 1.56;
+}
+
+aside {
+    width: 20%;
+    padding-left: .5rem;
+    padding-right: 2rem;
+    margin-left: .5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #9E5B28;
+    font-style: italic;
+    color: #633F32;
+}
+
+aside > p {
+    margin: .5rem;
+}
+
+section p {
+    max-width: 700px;
+    margin: 2em auto;
+    line-height: 1.56;
+}
+
+details {
+    border: 1px solid #9E5B28;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+    margin: auto;
+    width: 75%;
+}
+
+details > summary {
+    padding: 2px 6px;
+    width: 99%;
+    border: none;
+    cursor: pointer;
+}
+details[open] summary {
+    background: #C2A581;
+    color: #333;
+}
+
+hr {
+    border: 0;
+    width: 90%;
+    border-top: 1px solid #9E5B28;
+}
+
+
+footer {
+    background-color: #1A1C1A;
+    color: white;
+    clear: both;
+    text-align: center;
+    font-family: fantasy;
+    font-size: smaller;
+    padding: 15px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
