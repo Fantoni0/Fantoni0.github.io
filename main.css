@@ -54,14 +54,13 @@ a:visited {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 50%;
-    border: 1vmin inset #1A1C1A;
-    height: 20vmin;
+    border-radius: 3%;
+    height: 26vmin;
     width: 20vmin;
 }
 
 #photo:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     filter: grayscale(100%);
 }
 
