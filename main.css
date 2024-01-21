@@ -98,7 +98,7 @@ aside {
     padding-right: 2rem;
     margin-left: .1rem;
     margin-right: 30vw;
-    float: start;
+    float: initial;
     box-shadow: inset 5px 0 5px -5px #9E5B28;
     font-style: italic;
     color: #633F32;
@@ -119,12 +119,12 @@ details {
     border-radius: 4px;
     padding: .5em .5em 0;
     margin: auto;
-    width: 65vw;
+    width: 95%;
 }
 
 details > summary {
     padding: 2px 6px;
-    width: 65vw;
+    width: 65%;
     border: none;
     cursor: pointer;
 }
