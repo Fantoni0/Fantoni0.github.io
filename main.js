@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('theme-toggle');
+    const skillsSidebar = document.getElementById('skills-sidebar');
+    const skillsToggle = document.getElementById('skills-toggle');
     
     // Function to set theme
     const setTheme = (theme) => {
@@ -30,7 +32,15 @@ document.addEventListener('DOMContentLoaded', () => {
             setTheme(e.matches ? 'dark' : 'light');
         }
     });
-});
 
-// Update copyright year
-document.getElementById('year').textContent = new Date().getFullYear(); 
+    // Skills sidebar toggle functionality
+    const isCollapsed = localStorage.getItem('skillsSidebarCollapsed') === 'true';
+    if (isCollapsed) {
+        skillsSidebar.classList.add('collapsed');
+    }
+
+    skillsToggle.addEventListener('click', () => {
+        skillsSidebar.classList.toggle('collapsed');
+        localStorage.setItem('skillsSidebarCollapsed', skillsSidebar.classList.contains('collapsed'));
+    });
+}); 

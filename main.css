@@ -192,7 +192,7 @@ header {
 
 h1 {
     color: var(--primary-color);
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     font-size: 2.5rem;
     font-weight: 700;
     letter-spacing: -0.5px;
@@ -501,4 +501,152 @@ hr {
 .separator {
     margin: 0 0.75rem;
     opacity: 0.5;
+}
+
+/* Add subtitle styling */
+header h2 {
+    color: var(--text-muted);
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 0 0 1.5rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.skills-sidebar {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    padding: 1.5rem;
+    width: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform var(--transition-speed) ease;
+    z-index: 900;
+}
+
+/* Add toggle button styles */
+.skills-toggle {
+    position: absolute;
+    left: -28px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    width: 28px;
+    height: 56px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    transition: color var(--transition-speed) ease;
+    padding: 0;
+    z-index: 901;
+}
+
+.skills-toggle:hover {
+    color: var(--text-color);
+}
+
+.toggle-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    transition: transform var(--transition-speed) ease;
+}
+
+/* Collapsed state */
+.skills-sidebar.collapsed {
+    transform: translateX(100%) translateY(-50%);
+}
+
+.skills-sidebar.collapsed .skills-toggle .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.skills-group {
+    margin-bottom: 1.5rem;
+}
+
+.skills-group:last-child {
+    margin-bottom: 0;
+}
+
+.skills-group h4 {
+    color: var(--primary-color);
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.skills-group ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-group li {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+    padding-left: 1.25rem;
+    position: relative;
+}
+
+.skills-group li::before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+/* Responsive adjustment */
+@media (max-width: 1400px) {
+    .skills-sidebar {
+        position: static;
+        transform: none;
+        width: auto;
+        border-radius: var(--border-radius);
+        margin: 2rem 0;
+    }
+
+    .skills-toggle {
+        display: none;
+    }
+
+    .skills-sidebar.collapsed {
+        transform: none;
+    }
+}
+
+/* Add hover effect for collapsed state */
+.skills-sidebar.collapsed .skills-toggle:hover::after {
+    content: 'Show Skills';
+    position: absolute;
+    right: 40px;
+    background: var(--surface);
+    padding: 0.5rem 0.75rem;
+    border-radius: var(--border-radius);
+    font-size: 0.8rem;
+    white-space: nowrap;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+}
+
+/* Add hover effect for expanded state */
+.skills-toggle:hover::after {
+    content: 'Hide Skills';
+    position: absolute;
+    right: 40px;
+    background: var(--surface);
+    padding: 0.5rem 0.75rem;
+    border-radius: var(--border-radius);
+    font-size: 0.8rem;
+    white-space: nowrap;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
 }
