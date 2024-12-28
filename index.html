@@ -1,177 +1,183 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="Antonio's personal webpage">
-  <meta name="viewport" content="width=device-width, initial-scale=1 , minimum-scale=1, maximum-scale=1">
+  <title>Antonio M. Larriba - Personal Website</title>
+  <meta name="description" content="Antonio M. Larriba's personal webpage - Cryptography Researcher">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:title" content="Antonio M. Larriba">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://fantoni0.github.io/">
+  <meta property="og:description" content="Personal webpage of Antonio M. Larriba - Cryptography Researcher">
 
+  <link rel="icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="icon.png">
   <link rel="stylesheet" href="main.css">
-
-  <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
   <div class="wrapper">
     <header>
+      <div class="theme-switch">
+        <button id="theme-toggle" aria-label="Toggle theme">
+          <div class="toggle-track">
+            <div class="toggle-indicator">
+              <span class="check">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="5"/>
+                  <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                </svg>
+              </span>
+              <span class="check">
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </button>
+      </div>
+      <div class="social-sidebar">
+        <a href="https://www.linkedin.com/in/antoniomlarribaflor/" target="_blank" rel="noopener" aria-label="LinkedIn Profile">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+        </a>
+        <a href="https://www.researchgate.net/profile/Antonio-Larriba" target="_blank" rel="noopener" aria-label="ResearchGate Profile">
+          <span class="icon-text">RG</span>
+        </a>
+        <a href="https://scholar.google.es/citations?user=bKQXy50AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener" aria-label="Google Scholar Profile">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/>
+          </svg>
+        </a>
+        <a href="https://github.com/Fantoni0" target="_blank" rel="noopener" aria-label="GitHub Profile">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
+      </div>
       <h1>Antonio M. Larriba Flor</h1>
+      <div class="header-links">
+        <a href="#about">About</a>
+        <span class="separator">•</span>
+        <a href="#publications">Publications</a>
+        <span class="separator">•</span>
+        <a href="doc/cv.pdf" download>CV</a>
+      </div>
     </header>
-    <nav>
-      <ul>
-        <li><a href="#about">About |</a></li>
-        <li><a href="#publications">Publications |</a></li>
-        <li><a href="#faq">FAQ |</a></li>
-        <li><a href="https://www.researchgate.net/profile/Antonio-Larriba" target="_blank">Research Gate |</a></li>
-        <li><a href="https://scholar.google.es/citations?user=bKQXy50AAAAJ&hl=en&oi=ao" target="_blank">Google Scholar |</a></li>
-        <li><a href="https://www.linkedin.com/in/antoniomlarribaflor/" target="_blank">Linkedin |</a></li>
-        <li><a href="https://github.com/Fantoni0" target="_blank">Github |</a></li>
-        <li><a href="doc/cv.pdf" download>CV</a></li>
-      </ul>
-    </nav>
 
+    <main>
+      <section id="about">
+        <article>
+          <img id="photo" src="imgs/me.jpeg" alt="Personal Photo">
 
-    <section id="about">
-      <article>
-        <h3>Welcome to my personal webpage!</h3>
-        <img id="photo" src="imgs/me.jpeg" alt="Personal Photo">
-
-        <p>I am a PhD student in cryptography from the <a href="https://www.upv.es/index-en.html" target="_blank">Universidad Politécnica de Valencia</a>.
-          I work on my thesis, under the supervision of my advisors
-          <a href="http://personales.upv.es/dlopezr/" target="_blank">Damián López Rodríguez</a>
-          and <a href="https://jsempere.webs.upv.es/" target="_blank">José M. Sempere</a>,
-          in the <a href="https://alfa.webs.upv.es/" target="_blank">ALFA</a> research group.
-          Here you can find information about me, my work, my research interests, publications and get the latest version of my CV.</p>
-        <p>My research interests include cryptography, e-voting, security, DeFi and blockchain.
-        Currently, I am also working as Cryptography Researcher at <a href="https://www.advancedblockchain.com/" target="">Advanced Blockchain</a> and <a href="https://www.composable.finance/" target="_blank">Composable Finance. </a></p>
-      </article>
-    </section>
-
-    <hr>
-
-    <section id="publications">
-      <h3>Publications</h3>
-      <article>
-        <details>
-          <summary>Journal Articles</summary>
-          <ul>
-            <li>2023 - Study and Automatic Translation of Toki Pona - Pablo Baggetto, Damián López, Antonio M. Larriba - <a href="https://link.springer.com/chapter/10.1007/978-3-031-36616-1_52" target="_blank">Print</a> </li>
-            <li>2022 - How to Grant Anonymous Access
-              - Antonio M. Larriba, Damián López - IEEE Transactions on Information Forensics and Security - <a href="https://www.researchgate.net/publication/366144662_How_to_Grant_Anonymous_Access" target="_blank">Preprint</a> <a href="https://github.com/Fantoni0/ara2" target="_blank">Code</a> </li>
-            <li>2022 - SUVS: Secure Unencrypted Voting Scheme - Antonio M. Larriba, Damián López - Informatica - <a href="https://www.researchgate.net/publication/366072785_SUVS_Secure_Unencrypted_Voting_Scheme" target="_blank">Print</a></li>
-            <li>2021 - Distributed Trust, a Blockchain Election Scheme - Antonio M. Larriba, Aleix Cerdà i Cucó, José M. Sempere & Damián López - Informatica - <a href="https://www.researchgate.net/publication/349132615_Distributed_Trust_a_Blockchain_Election_Scheme" target="_blank">Preprint</a> <a href="https://github.com/Fantoni0/RingCTPerformance" target="_blank">Code</a> </li>
-            <li>2020 - A two authorities electronic vote scheme - Antonio M. Larriba, José M. Sempere & Damián López - Computers & Security - <a href="https://www.researchgate.net/publication/342431273_A_two_authorities_electronic_vote_scheme" target="_blank">Preprint</a></li>
-            <li>2017 - Stance detection at IberEval 2017: A Biased Representation for a Biased Problem - Diego Aineto García & Antonio M. Larriba - IberEval - <a href="http://ceur-ws.org/Vol-1881/StanceCat2017_paper_5.pdf" target="_blank">Preprint</a></li>
-          </ul>
-        </details>
-      </article>
-
-      <article>
-        <details>
-          <summary>Theses</summary>
-          <ul>
-            <li>2023 - Doctoral Thesis - Distributed Cryptographic Protocols - Antonio M. Larriba - Directors: Damián López Rodríguez & José María Sempere Luna - <a href="https://riunet.upv.es/bitstream/handle/10251/198106/Larriba%20-%20Distributed%20Cryptographic%20Protocols.pdf?sequence=4" target="_blank">Print</a> </li>
-            <li>2017 - Master's Thesis - Character-based Neural Machine Translation - Antonio M. Larriba - Directors: Francisco Casacuberta Nolla & <a href="http://lvapeab.github.io/" target="_blank">Álvaro Peris Abril</a> - <a href="https://riunet.upv.es/handle/10251/89965" target="_blank">Print</a> </li>
-            <li>2016 - Bachelor's Final Work - Design, implementation and evaluation of update mechanism for distributed system based on passive replication - Antonio M. Larriba - Director: <a href="https://dialnet.unirioja.es/servlet/autor?codigo=571740" target="_blank">Francisco Daniel Muñoz Escoí</a> - <a href="https://riunet.upv.es/handle/10251/68601" target="_blank">Print</a> <a href="https://github.com/Fantoni0/Proyecto" target="_blank">Code</a> </li>
-          </ul>
-        </details>
-      </article>
-
-      <article>
-        <details>
-          <summary>Directed Research Works</summary>
-          <ul>
-            <details>
-              <summary>TFGs</summary>
-              <ul>
-                <li>2023 - Implementación distribuida de un protocolo de voto electrónico - Óscar Roselló Ibáñez - Directors: Damián López & Antonio M. Larriba - <a href="https://riunet.upv.es/bitstream/handle/10251/197197/Rosello%20-%20Implementacion%20distribuida%20de%20un%20protocolo%20de%20voto%20electronico.pdf?sequence=1&isAllowed=y" target="_blank">Print</a></li>
-                <li>2022 - Study and automatic translation of a language with limited resources - José Pablo Baggetto Chamero - Directors: Damián López & Antonio M. Larriba - <a href="https://riunet.upv.es/bitstream/handle/10251/185062/Baggetto%20-%20Study%20and%20automatic%20translation%20of%20a%20language%20with%20limited%20resources.pdf?sequence=1&isAllowed=y" target="_blank">Print</a></li>
-                <li>2020 - An e-voting scheme based on Blockchain -  Aleix Cerdà i Cucó - Directors: Damián López & Antonio M. Larriba - <a href="https://riunet.upv.es/bitstream/handle/10251/150385/Cerd%c3%a0%20-%20Un%20sistema%20de%20voto%20electr%c3%b3nico%20basado%20en%20la%20tecnolog%c3%ada%20blockchain.pdf?sequence=1&isAllowed=y" target="_blank">Print</a></li>
-              </ul>
-            </details>
-            <details>
-              <summary>Master's Theses</summary>
-              <ul>
-                <li>2023 - Interfaz web 3.0 para un protocolo de voto electrónico desplegado en blockchain - Héctor González Campos - Directors: Damián López & Antonio M. Larriba - <a href="https://riunet.upv.es/bitstream/handle/10251/198269/Gonzalez%20-%20Interfaz%20web%2030%20para%20un%20protocolo%20de%20voto%20electronico%20desplegado%20en%20blockchain.pdf?sequence=1&isAllowed=y" target="_blank">Print</a></li>
-              </ul>
-            </details>
-            <details>
-              <summary>PhD Theses</summary>
-              This is a placeholder.
-            </details>
-          </ul>
-        </details>
-      </article>
-
-    <article>
-      <details>
-        <summary>Patents</summary>
-        <ul>
-          <li>2021 - MÉTODO DE REGISTRO DISTRIBUIDO PARA EL CONTROL DE ACCESO ANÓNIMO (Distributed registration method for anonymous access) - Antonio M. Larriba & Damián López - Application Number: <strong>202130890</strong> - Status: Application Published </li>
-          <li>2021 - MÉTODO DE CONTROL DE VOTO ELECTRÓNICO (Electronic voting control method) - Antonio M. Larriba & Damián López - Application Number: <strong>202131209</strong> - Status: Application Published </li>
-        </ul>
-      </details>
-    </article>
-
-    <article>
-      <details>
-        <summary>Talks & Seminars</summary>
-        <ul>
-          <li>2018 - Character-based Neural Machine Translation - V Meeting of PhD Students UPV - Antonio M. Larriba - <a href="doc/pres_char_based_nmt.pdf" download>Slides</a></li>
-          <li>2021 - Secure e-voting protocols (Spanish) - VRAIN Seminars - Antonio M. Larriba - <a href="doc/pres_evoting.pdf" download>Slides</a></li>
-          <li>2021 - DEFI LAB: Blockchain, DeFi & Friends - ABAG & Etsinf Seminar - Antonio M. Larriba - <a href="doc/pres_block_intro.pdf" download>Slides</a></li>
-          <li>2021 - Cryptography & Blockchain (Spanish) - Master's Degree in Cybersecurity and Cyberintelligence - Antonio M. Larriba - <a href="doc/pres_criptography_blockchain.pdf" download>Slides</a></li>
-        </ul>
-      </details>
-    </article>
-
-    </section>
-
-
-    <hr>
-
-    <section id="faq">
-      <h3>Frequent Answers & Questions</h3>
-      <article>
-        <details>
-          <summary>Are you the one and only, truly original <s><a href="https://www.youtube.com/watch?v=he3Tmn46LSo" target="_blank"> Panther pink panther </a></s> Antonio M. Larriba from head to toe?</summary>
-           Yes, I am! My full name is Antonio Manuel Larriba Flor.
-           I usually sign scientific publications as Antonio M. Larriba, but you can also find some variations as AM Larriba or Antonio M.
-        </details>
+          <p>I am a PhD student in cryptography from the <a href="https://www.upv.es/index-en.html" target="_blank">Universidad Politécnica de Valencia</a>.
+            I work on my thesis, under the supervision of my advisors
+            <a href="http://personales.upv.es/dlopezr/" target="_blank">Damián López Rodríguez</a>
+            and <a href="https://jsempere.webs.upv.es/" target="_blank">José M. Sempere</a>,
+            in the <a href="https://alfa.webs.upv.es/" target="_blank">ALFA</a> research group.
+            Here you can find information about me, my work, my research interests, publications and get the latest version of my CV.</p>
+          <p>My research interests include cryptography, e-voting, security, DeFi and blockchain.
+          Currently, I am also working as Cryptography Researcher at <a href="https://www.advancedblockchain.com/" target="">Advanced Blockchain</a> and <a href="https://www.composable.finance/" target="_blank">Composable Finance. </a></p>
         </article>
+      </section>
+
+      <hr>
+
+      <section id="publications">
+        <h3>Publications</h3>
         <article>
           <details>
-            <summary>Why does your webpage has donation addresses on the footer if you don't provide any service or insightful posts?</summary>
-            To be honest, I just wanted to have them. I really love cryptocurrencies and what they represent. Any received funds will be spent on coffee.
-            These are my favorite coins: Bitcoin as the first distributed and decentralized cryptocurrency that bridged many technologies
-            to provide a consensus mechanism in an adversarial environment. Ethereum as the most (turing-) complete one that has enabled the DeFi world, distributed games and a whole and enormous ecosystem.
-            Finally, Monero, simple, private and cryptoraphycally awesome. Monero is what people think they are buying when they are buying Bitcoin.
+            <summary>Journal Articles</summary>
+            <ul>
+              <li>2023 - Study and Automatic Translation of Toki Pona - Pablo Baggetto, Damián López, Antonio M. Larriba - <a href="https://link.springer.com/chapter/10.1007/978-3-031-36616-1_52" target="_blank">Print</a> </li>
+              <li>2022 - How to Grant Anonymous Access
+                - Antonio M. Larriba, Damián López - IEEE Transactions on Information Forensics and Security - <a href="https://www.researchgate.net/publication/366144662_How_to_Grant_Anonymous_Access" target="_blank">Preprint</a> <a href="https://github.com/Fantoni0/ara2" target="_blank">Code</a> </li>
+              <li>2022 - SUVS: Secure Unencrypted Voting Scheme - Antonio M. Larriba, Damián López - Informatica - <a href="https://www.researchgate.net/publication/366072785_SUVS_Secure_Unencrypted_Voting_Scheme" target="_blank">Print</a></li>
+              <li>2021 - Distributed Trust, a Blockchain Election Scheme - Antonio M. Larriba, Aleix Cerdà i Cucó, José M. Sempere & Damián López - Informatica - <a href="https://www.researchgate.net/publication/349132615_Distributed_Trust_a_Blockchain_Election_Scheme" target="_blank">Preprint</a> <a href="https://github.com/Fantoni0/RingCTPerformance" target="_blank">Code</a> </li>
+              <li>2020 - A two authorities electronic vote scheme - Antonio M. Larriba, José M. Sempere & Damián López - Computers & Security - <a href="https://www.researchgate.net/publication/342431273_A_two_authorities_electronic_vote_scheme" target="_blank">Preprint</a></li>
+              <li>2017 - Stance detection at IberEval 2017: A Biased Representation for a Biased Problem - Diego Aineto García & Antonio M. Larriba - IberEval - <a href="http://ceur-ws.org/Vol-1881/StanceCat2017_paper_5.pdf" target="_blank">Preprint</a></li>
+            </ul>
           </details>
-      </article>
+        </article>
 
-      <article>
+        <article>
+          <details>
+            <summary>Theses</summary>
+            <ul>
+              <li>2023 - Doctoral Thesis - Distributed Cryptographic Protocols - Antonio M. Larriba - Directors: Damián López Rodríguez & José María Sempere Luna - <a href="https://riunet.upv.es/bitstream/handle/10251/198106/Larriba%20-%20Distributed%20Cryptographic%20Protocols.pdf?sequence=4" target="_blank">Print</a> </li>
+              <li>2017 - Master's Thesis - Character-based Neural Machine Translation - Antonio M. Larriba - Directors: Francisco Casacuberta Nolla & <a href="http://lvapeab.github.io/" target="_blank">Álvaro Peris Abril</a> - <a href="https://riunet.upv.es/handle/10251/89965" target="_blank">Print</a> </li>
+              <li>2016 - Bachelor's Final Work - Design, implementation and evaluation of update mechanism for distributed system based on passive replication - Antonio M. Larriba - Director: <a href="https://dialnet.unirioja.es/servlet/autor?codigo=571740" target="_blank">Francisco Daniel Muñoz Escoí</a> - <a href="https://riunet.upv.es/handle/10251/68601" target="_blank">Print</a> <a href="https://github.com/Fantoni0/Proyecto" target="_blank">Code</a> </li>
+            </ul>
+          </details>
+        </article>
+
+        <article>
+          <details>
+            <summary>Directed Research Works</summary>
+            <ul>
+              <details>
+                <summary>TFGs</summary>
+                <ul>
+                  <li>2023 - Implementación distribuida de un protocolo de voto electrónico - Óscar Roselló Ibáñez - Directors: Damián López & Antonio M. Larriba - <a href="https://riunet.upv.es/bitstream/handle/10251/197197/Rosello%20-%20Implementacion%20distribuida%20de%20un%20protocolo%20de%20voto%20electronico.pdf?sequence=1&isAllowed=y" target="_blank">Print</a></li>
+                  <li>2022 - Study and automatic translation of a language with limited resources - José Pablo Baggetto Chamero - Directors: Damián López & Antonio M. Larriba - <a href="https://riunet.upv.es/bitstream/handle/10251/185062/Baggetto%20-%20Study%20and%20automatic%20translation%20of%20a%20language%20with%20limited%20resources.pdf?sequence=1&isAllowed=y" target="_blank">Print</a></li>
+                  <li>2020 - An e-voting scheme based on Blockchain -  Aleix Cerdà i Cucó - Directors: Damián López & Antonio M. Larriba - <a href="https://riunet.upv.es/bitstream/handle/10251/150385/Cerd%c3%a0%20-%20Un%20sistema%20de%20voto%20electr%c3%b3nico%20basado%20en%20la%20tecnolog%c3%ada%20blockchain.pdf?sequence=1&isAllowed=y" target="_blank">Print</a></li>
+                </ul>
+              </details>
+              <details>
+                <summary>Master's Theses</summary>
+                <ul>
+                  <li>2023 - Interfaz web 3.0 para un protocolo de voto electrónico desplegado en blockchain - Héctor González Campos - Directors: Damián López & Antonio M. Larriba - <a href="https://riunet.upv.es/bitstream/handle/10251/198269/Gonzalez%20-%20Interfaz%20web%2030%20para%20un%20protocolo%20de%20voto%20electronico%20desplegado%20en%20blockchain.pdf?sequence=1&isAllowed=y" target="_blank">Print</a></li>
+                </ul>
+              </details>
+              <details>
+                <summary>PhD Theses</summary>
+                This is a placeholder.
+              </details>
+            </ul>
+          </details>
+        </article>
+
+        <article>
+          <details>
+            <summary>Patents</summary>
+            <ul>
+              <li>2021 - MÉTODO DE REGISTRO DISTRIBUIDO PARA EL CONTROL DE ACCESO ANÓNIMO (Distributed registration method for anonymous access) - Antonio M. Larriba & Damián López - Application Number: <strong>202130890</strong> - Status: Application Published </li>
+              <li>2021 - MÉTODO DE CONTROL DE VOTO ELECTRÓNICO (Electronic voting control method) - Antonio M. Larriba & Damián López - Application Number: <strong>202131209</strong> - Status: Application Published </li>
+            </ul>
+          </details>
+        </article>
+
+        <article>
+          <details>
+            <summary>Talks & Seminars</summary>
+            <ul>
+              <li>2018 - Character-based Neural Machine Translation - V Meeting of PhD Students UPV - Antonio M. Larriba - <a href="doc/pres_char_based_nmt.pdf" download>Slides</a></li>
+              <li>2021 - Secure e-voting protocols (Spanish) - VRAIN Seminars - Antonio M. Larriba - <a href="doc/pres_evoting.pdf" download>Slides</a></li>
+              <li>2021 - DEFI LAB: Blockchain, DeFi & Friends - ABAG & Etsinf Seminar - Antonio M. Larriba - <a href="doc/pres_block_intro.pdf" download>Slides</a></li>
+              <li>2021 - Cryptography & Blockchain (Spanish) - Master's Degree in Cybersecurity and Cyberintelligence - Antonio M. Larriba - <a href="doc/pres_criptography_blockchain.pdf" download>Slides</a></li>
+            </ul>
+          </details>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>Copyright © 2024 Antonio M. Larriba Flor | antoniomlf[at]protonmail[dot]com</p>
+      <div class="crypto-addresses">
         <details>
-          <summary>Why does your webpage looks so 90-ish? </summary>
-          There are multiple factors: I do not like web development very much, it requires some artistic touch that I obviously lack, and, I always liked simple webpages.
-          The fact that nowadays we can make really complete web applications does not mean that every single page must be a 500MB monster. Specially true for the average personal wewpage. Content >> a e s t h e t i c s.
-          I took some inspiration from my all-time favorite personal webpage: Donald E. Knuth's <a href="https://www-cs-faculty.stanford.edu/~knuth/" target="_blank"> personal webpage</a>
-          and the project MotherFuckingWebsite [<a href="https://motherfuckingwebsite.com/" target="_blank">1</a>, <a href="http://bettermotherfuckingwebsite.com/" target="_blank">2</a>,
-          <a href="https://securemotherfuckingwebsite.com/" target="_blank">3</a>, <a href="https://thebestmotherfuckingwebsite.co/" target="_blank">4</a>].
+          <summary>Crypto Addresses</summary>
+          <p><strong>BTC:</strong> bc1q9q4llgdv0vwgln08l43cm433uaeery8mnn4t7r</p>
+          <p><strong>ETH:</strong> 0x233054eC24996BCBF2247B926D9f828567872e8d</p>
+          <p><strong>XMR:</strong> 89xtrwg85JWEC5rirUnKfQ7aEqUWgEz2YLTsjCTWnUqdTckT5okheWMZ5j9oDuymYCXHa1NZF5mqoJQPnheX1E57MqwVVbj</p>
         </details>
-      </article>
-    </section>
+      </div>
+    </footer>
   </div>
-
-  <footer>
-    Copyright © Antonio M. Larriba Flor | antoniomlf-at-protonmail-dot-com | <em> 20[\d]{2} </em> <br>
-    BTC - bc1q9q4llgdv0vwgln08l43cm433uaeery8mnn4t7r | ETH - 0x233054eC24996BCBF2247B926D9f828567872e8d <br>
-    XMR - 89xtrwg85JWEC5rirUnKfQ7aEqUWgEz2YLTsjCTWnUqdTckT5okheWMZ5j9oDuymYCXHa1NZF5mqoJQPnheX1E57MqwVVbj
-  </footer>
+  <script src="main.js"></script>
 </body>
 
 </html>
