@@ -685,3 +685,17 @@ header h2 {
     margin-bottom: 0.5rem;
     color: var(--text-color);
 }
+
+/* Add skills title style */
+.skills-title {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Adjust first skills group margin */
+.skills-group:first-of-type {
+    margin-top: 0;
+}
