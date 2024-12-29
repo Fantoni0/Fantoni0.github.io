@@ -650,3 +650,38 @@ header h2 {
     border: 1px solid var(--border-color);
     color: var(--text-color);
 }
+
+/* Experience section styles */
+.experience-item {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.experience-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.experience-item h4 {
+    color: var(--text-color);
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.experience-meta {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.experience-item ul {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.experience-item li {
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
